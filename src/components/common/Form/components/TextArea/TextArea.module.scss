@@ -1,0 +1,66 @@
+$bg-input: #fff;
+$bg-focus-input: #fff;
+$bg-btn: #2367ed;
+$bg-disable: #f4f5f6;
+
+$color-btn: #fff;
+$color-placeholder: #b4b5bc;
+$color-clean: #29303c;
+$color-focus: #2367ed;
+$color-done: #2cae39;
+$color-error: #e93a3a;
+
+$border-input: #e1e5ed;
+$border-disable: #e1e5ed;
+
+$border-radius: 2px;
+$padding-input: 8px 20px;
+$font-size-input: 16px;
+
+.container {
+	.label {
+		font-size: $font-size-input;
+		font-weight: 500;
+		margin-bottom: 8px;
+		display: block;
+	}
+
+	.textarea {
+		width: 100%;
+		min-height: 140px;
+		resize: none;
+		border-radius: $border-radius;
+		border: 1px solid $border-input;
+		background-color: $bg-input;
+		font-size: $font-size-input;
+		font-weight: 500;
+		padding: $padding-input;
+
+		&::placeholder {
+			font-weight: 500;
+			color: $color-placeholder;
+		}
+		&.focus {
+			border: 1px solid $color-focus;
+		}
+		&.done {
+			background-color: $bg-focus-input;
+			border: 1px solid $color-done;
+		}
+		&.error {
+			background-color: $bg-focus-input;
+			border: 1px solid $color-error;
+		}
+		&.readOnly {
+			cursor: default;
+			background-color: $bg-disable;
+			border: 1px solid $border-disable;
+		}
+	}
+
+	.errorText {
+		margin-left: 6px;
+		font-size: 12px;
+		color: $color-error !important;
+	}
+}

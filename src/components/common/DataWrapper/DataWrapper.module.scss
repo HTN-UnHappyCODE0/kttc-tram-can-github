@@ -1,0 +1,11 @@
+.container {
+	min-height: 55vh;
+}
+
+.loading {
+	min-height: 55vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

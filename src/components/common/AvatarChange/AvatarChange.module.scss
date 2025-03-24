@@ -1,0 +1,60 @@
+.container {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.image {
+	width: 100px;
+	height: 100px;
+	border-radius: 4px;
+}
+
+.main_des {
+	p {
+		color: var(--neutrals-3);
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	span {
+		color: var(--neutrals-2);
+		font-size: 14px;
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+.input {
+	cursor: pointer;
+	user-select: none;
+	display: flex !important;
+	align-items: center;
+	gap: 6px;
+	margin-top: 12px;
+	padding: 8px 12px;
+	width: fit-content;
+	border-radius: 2px;
+	border: 1px solid var(--border-color);
+	background: var(--bg-light);
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		transform: scale(0.9);
+	}
+
+	.upload {
+		width: 24px;
+		height: 24px;
+	}
+
+	p {
+		color: var(--dark-2);
+		font-size: 14px;
+		font-weight: 500;
+	}
+}

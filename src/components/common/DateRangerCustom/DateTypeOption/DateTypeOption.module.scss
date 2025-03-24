@@ -1,0 +1,53 @@
+$bg-color: var(--bg-light);
+$bg-acitve: var(--bg-grey);
+$bg-hover: var(--bg-grey);
+$bg-disabled: #f0eeee;
+
+$color-text: var(--dark-2);
+$color-active: var(--primary);
+
+$border-color: var(--border-color);
+$border-hover: var(--primary);
+$border-active: var(--primary);
+$border-disabled: #999999;
+
+$border-radius: 2px;
+
+// mainOption
+.mainOption {
+	margin-top: 4px;
+	width: 168px;
+	padding: 8px;
+	border-radius: $border-radius;
+	background: $bg-color;
+	box-shadow: 0px 137px 123px 0px rgba(175, 175, 175, 0.11), 0px 59.642px 64.694px 0px rgba(175, 175, 175, 0.08),
+		0px 29.66px 43.62px 0px rgba(175, 175, 175, 0.07), 0px 13.866px 30.709px 0px rgba(175, 175, 175, 0.07),
+		0px 5.309px 20.507px 0px rgba(175, 175, 175, 0.06), 0px 1.17px 10.708px 0px rgba(175, 175, 175, 0.05);
+}
+
+.option {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: $color-text;
+	background-color: $bg-color;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 8px 16px;
+	border-radius: $border-radius;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: $bg-hover;
+	}
+
+	& + & {
+		margin-top: 2px;
+	}
+
+	&.option_active {
+		background-color: $bg-hover;
+	}
+}

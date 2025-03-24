@@ -1,0 +1,53 @@
+{
+	"name": "kttc-tram-can",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start -p 9530",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@fileforge/client": "^0.1.17",
+		"@reduxjs/toolkit": "1.9.5",
+		"@tanstack/react-query": "^4.32.0",
+		"@tippyjs/react": "^4.2.6",
+		"@types/node": "20.11.30",
+		"@types/react": "18.2.67",
+		"@types/react-dom": "18.2.22",
+		"axios": "^1.6.8",
+		"clsx": "^2.1.0",
+		"cookies-next": "^4.1.1",
+		"eslint": "8.57.0",
+		"eslint-config-next": "14.1.4",
+		"iconsax-react": "^0.0.8",
+		"lg-thumbnail": "^1.2.1",
+		"lg-zoom": "^1.3.0",
+		"lightgallery": "^2.7.2",
+		"md5": "^2.3.0",
+		"moment": "^2.30.1",
+		"next": "13.5.2",
+		"nprogress": "^0.2.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "^5.0.1",
+		"react-lottie": "^1.2.4",
+		"react-moment": "^1.1.3",
+		"react-redux": "8.1.1",
+		"react-slick": "^0.30.2",
+		"react-to-print": "^2.15.1",
+		"react-toastify": "^10.0.5",
+		"sass": "^1.72.0",
+		"slick-carousel": "^1.8.1",
+		"typescript": "5.4.2",
+		"xlsx": "^0.18.5"
+	},
+	"devDependencies": {
+		"@fileforge/react-print": "^0.1.143",
+		"@types/md5": "^2.3.5",
+		"@types/nprogress": "^0.2.3",
+		"@types/react-lottie": "^1.2.10",
+		"@types/react-slick": "^0.23.13"
+	}
+}

@@ -1,0 +1,106 @@
+$bg: #fff;
+$bg-focus: #fff;
+$bg-btn: #2367ed;
+$bg-disable: #f4f5f6;
+
+$color-btn: #fff;
+$color-placeholder: #b4b5bc;
+$color-clean: #29303c;
+$color-focus: #2367ed;
+$color-done: #2cae39;
+$color-error: #e93a3a;
+
+$border: #e1e5ed;
+$border-disable: #e1e5ed;
+
+$border-radius: 2px;
+$padding: 8px 20px;
+$font-size: 16px;
+
+.label {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.box_input {
+	position: relative;
+	user-select: none;
+}
+
+.unit {
+	position: absolute;
+	position: absolute;
+	top: 50%;
+	right: -26px;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid $border;
+	padding: 0 12px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.input {
+	font-size: $font-size;
+	font-weight: 500;
+	border: 1px solid $border;
+	padding: $padding;
+	height: 42px;
+	border-radius: $border-radius;
+	width: 100%;
+	background-color: $bg;
+	user-select: none;
+
+	&:focus {
+		background-color: $bg-focus;
+		border: 1px solid $border;
+	}
+
+	&.readonly {
+		cursor: default;
+		background-color: $bg-disable;
+		border: 1px solid $border-disable;
+	}
+}
+
+.main_option {
+	width: 100%;
+	border-radius: $border-radius;
+	padding: 6px;
+	transition: 0.15s;
+	border: 1px solid $border;
+	background-color: $bg;
+	max-height: 320px;
+	overflow: auto;
+}
+
+.item {
+	position: relative;
+	width: 100%;
+	padding: 8px 16px;
+	font-size: 14px;
+	border-radius: 2px;
+	cursor: pointer;
+	color: #000;
+	font-weight: 500;
+
+	& + & {
+		margin-top: 4px;
+	}
+
+	&.active {
+		background-color: var(--bg-grey);
+
+		&:hover {
+			background-color: var(--bg-grey);
+		}
+	}
+
+	&:hover {
+		background-color: var(--bg-grey);
+	}
+}

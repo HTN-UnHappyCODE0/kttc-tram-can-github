@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&.isPage {
+		height: calc(100vh - 24px - 24px - 60px);
+	}
+}
+
+@media (max-width: $widthTablet) {
+	.container {
+		&.isPage {
+			height: calc(100vh - 16px - 16px - 60px);
+		}
+	}
+}
+
+@media (max-width: $widthMobile) {
+	.container {
+		&.isPage {
+			height: calc(100vh - 8px - 8px - 60px);
+		}
+	}
+}

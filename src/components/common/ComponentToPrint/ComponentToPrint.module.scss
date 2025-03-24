@@ -1,0 +1,132 @@
+.container {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+
+	@media print {
+		position: relative;
+		background-color: white;
+		color: black;
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			border: 1px solid black;
+			padding: 8px;
+		}
+
+		.hide-on-print {
+			display: none;
+		}
+
+		.print-only {
+			display: block;
+		}
+
+		.page_number::after {
+			padding-top: 10mm;
+			content: counter(page);
+			position: fixed;
+			bottom: 0;
+			right: 10%;
+			transform: translateX(-50%);
+			padding-top: 5mm;
+			font-size: 12px;
+		}
+		.page-break {
+			margin-top: 1rem;
+			page-break-before: auto;
+			display: block;
+		}
+		.page-break.date {
+			@apply flex items-end;
+		}
+
+		.watermark_logo {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0.1;
+			pointer-events: none;
+			z-index: 1000;
+		}
+
+		.logo_mark_icon {
+			width: 60vh;
+			height: 60vh;
+			object-fit: contain;
+		}
+
+		.logo_mark {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+.invoice_container {
+	.invoice_header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		.logo_content {
+			display: flex;
+			align-items: center;
+			.logo_icon {
+				width: 50px;
+				height: 50px;
+			}
+
+			.title_logo {
+				user-select: none;
+				color: #066bb1;
+				font-size: 30px;
+				font-weight: 600;
+				margin-left: 8px;
+			}
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 0.75rem;
+		}
+
+		svg {
+			fill: black;
+		}
+	}
+
+	.company_info,
+	.bill_to {
+		text-align: right;
+		margin-bottom: 0.25rem;
+
+		p {
+			margin: 0;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+	}
+
+	.divider {
+		height: 1px;
+		background-color: #d1d5db;
+		margin: 1rem 0;
+	}
+
+	.invoice_note {
+		line-height: 1.25rem;
+	}
+}

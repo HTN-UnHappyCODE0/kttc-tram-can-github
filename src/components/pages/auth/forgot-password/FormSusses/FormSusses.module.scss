@@ -1,0 +1,21 @@
+.container {
+	position: relative;
+	border-radius: 16px;
+	background: var(--bg-light);
+	box-shadow: 0px 8px 40px 0px rgba(63, 83, 115, 0.16), 0px 3px 24px 0px rgba(63, 83, 115, 0.2), 0px 3px 8px 0px rgba(63, 83, 115, 0.08),
+		0px 1px 0px 0px rgba(63, 83, 115, 0.08);
+	padding: 40px;
+	width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.title {
+	color: var(--dark);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+	margin: 16px 0;
+}

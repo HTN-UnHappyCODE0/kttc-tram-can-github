@@ -1,0 +1,204 @@
+.inputFile {
+	display: block;
+	border-radius: 8px;
+	border: 1px solid #efefef;
+	background: #fdfdfd;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+	padding: 10px 0;
+
+	&.dragging {
+		border: 1px solid #efefef;
+		background: #ededed;
+	}
+
+	.groupEmpty {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		p {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 24px;
+			&:nth-child(3) {
+				color: #2a85ff;
+			}
+		}
+		.imageEmpty {
+			width: 200px;
+		}
+		a {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 24px;
+			color: #2a85ff;
+			transition: 0.3s;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.selectedFile {
+	width: 100%;
+	height: 100%;
+}
+
+.file {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid #efefef;
+
+	.icon {
+		height: 56px;
+		width: 56px;
+		background-color: rgb(181, 228, 202, 0.15);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 8px;
+
+		i {
+			display: block;
+			width: 70%;
+		}
+	}
+
+	.info {
+		flex: 1;
+	}
+
+	.name {
+		color: #303b48;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 16px;
+	}
+
+	.size {
+		margin-top: 8px;
+		color: #7d8c9e;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px;
+	}
+
+	.change {
+		color: #2a85ff;
+		font-size: 14px;
+		cursor: pointer;
+		user-select: none;
+		font-weight: 600;
+	}
+}
+
+.clear {
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 4px;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.main_assignUuid {
+	margin-top: 24px;
+
+	.assignUuid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+
+		& + .assignUuid {
+			margin-top: 16px;
+		}
+	}
+}
+
+.main_input {
+	label {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 24px;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.input {
+		width: 100%;
+		height: 42px;
+		font-size: 16px;
+		padding: 8px 16px;
+		border: 1px solid #e1e5ed;
+		border-radius: 2px;
+		background-color: #fff;
+		font-weight: 500;
+
+		&:focus {
+			border: 1px solid #2367ed;
+		}
+
+		&::placeholder {
+			font-weight: 500;
+			color: #b4b5bc;
+		}
+	}
+}
+
+.btn {
+	margin-top: 16px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main_table {
+	margin-top: 24px;
+	height: 800px;
+}
+
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.left {
+	h4 {
+		color: var(--dark-2);
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	p {
+		color: var(--neutrals-2);
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+.right {
+	display: flex;
+	gap: 12px;
+}

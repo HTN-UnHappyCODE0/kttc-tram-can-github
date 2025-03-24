@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+$padding: 24px;
+$height-header: 60px;
+
+.container {
+	padding: $padding;
+
+	&.bg {
+		background: #fff;
+		min-height: calc(100vh - $height-header);
+	}
+}
+
+@media (max-width: $widthTablet) {
+	.container {
+		padding: calc($padding - 8px);
+	}
+}
+
+@media (max-width: $widthMobile) {
+	.container {
+		padding: calc($padding - 16px);
+	}
+}

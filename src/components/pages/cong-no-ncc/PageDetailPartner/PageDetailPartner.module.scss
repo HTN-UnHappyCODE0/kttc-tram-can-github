@@ -1,0 +1,164 @@
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.header_title {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	p {
+		color: var(--dark-2);
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+.list_btn {
+	display: flex;
+	gap: 8px;
+}
+
+.btn_LuPencil {
+	cursor: pointer;
+	user-select: none;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 12px;
+	border-radius: 2px;
+	border: 1px solid var(--border-color);
+	transition: 0.2s;
+
+	p {
+		color: var(--dark-2);
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.table_infor {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	border: 1px solid #e1e5ed;
+}
+
+.row {
+	flex: 1;
+}
+
+.row div {
+	place-items: center;
+	padding-left: 24px;
+	border: 1px solid #e1e5ed;
+}
+
+.fullDescription {
+	flex: 1;
+}
+.container {
+	border: 1px solid #e1e5ed;
+	border-collapse: collapse;
+	width: 100%;
+	td {
+		border: 1px solid #e1e5ed;
+		padding-left: 15px;
+		font-weight: 600;
+		padding-right: 24px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+	.description {
+		vertical-align: top;
+	}
+	tr:last-child td {
+		border-bottom: none;
+	}
+	tr td:last-child {
+		border-right: none;
+	}
+	tr td:first-child {
+		border-left: none;
+	}
+}
+
+.container span {
+	font-weight: 600;
+}
+
+.container tr:first-child td {
+	border-top: none;
+}
+
+.list_title {
+	color: #23262f;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+}
+.main_table {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_export {
+	position: relative;
+	width: 580px;
+	padding: 20px 28px;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0px 137px 123px 0px rgba(175, 175, 175, 0.11), 0px 59.642px 64.694px 0px rgba(175, 175, 175, 0.08),
+		0px 29.66px 43.62px 0px rgba(175, 175, 175, 0.07), 0px 13.866px 30.709px 0px rgba(175, 175, 175, 0.07),
+		0px 5.309px 20.507px 0px rgba(175, 175, 175, 0.06), 0px 1.17px 10.708px 0px rgba(175, 175, 175, 0.05);
+}
+
+.title_export {
+	color: #23262f;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.des_export {
+	color: #777e90;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 2px;
+}
+
+.time_export {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.control_export {
+	margin-top: 20px;
+	display: flex;
+	gap: 12px;
+	justify-content: flex-end;
+}
+
+.icon_close_export {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 6px;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+}

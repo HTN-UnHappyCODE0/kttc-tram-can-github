@@ -1,0 +1,253 @@
+@import './color';
+@import './grid';
+@import './stylesGlobals';
+@import './custom';
+
+:root {
+	--toastify-toast-min-height: 56px;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: SF-Pro;
+	color: var(--dark);
+	background-color: var(--bg);
+
+	::-moz-selection {
+		color: var(--light);
+		background: var(--primary);
+	}
+
+	::selection {
+		color: var(--light);
+		background: var(--primary);
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+// body {
+// 	line-height: 1.5;
+// }
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input:-internal-autofill-selected {
+	background-color: transparent !important;
+}
+
+/* Make clicks pass-through */
+#nprogress {
+	pointer-events: none;
+}
+
+#nprogress .bar {
+	background: var(--primary);
+	position: fixed;
+	z-index: 1031;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 100px;
+	height: 100%;
+	box-shadow: 0 0 10px var(--primary), 0 0 5px var(--primary);
+	opacity: 1;
+	-webkit-transform: rotate(3deg) translate(0px, -4px);
+	-ms-transform: rotate(3deg) translate(0px, -4px);
+	transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+	display: block;
+	position: fixed;
+	z-index: 1031;
+	top: 15px;
+	right: 15px;
+}
+
+#nprogress .spinner-icon {
+	width: 18px;
+	height: 18px;
+	box-sizing: border-box;
+	border: solid 2px transparent;
+	border-top-color: var(--primary);
+	border-left-color: var(--primary);
+	border-radius: 50%;
+
+	-webkit-animation: nprogress-spinner 400ms linear infinite;
+	animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+	overflow: hidden;
+	position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+	position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes nprogress-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+// Toastify custom style
+.toastify-custom {
+	color: var(--light);
+	text-align: center;
+	padding: 6px;
+	line-height: 24px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+}
+
+.toastify-custom-success {
+	color: var(--light);
+	text-align: center;
+	padding: 6px;
+	line-height: 24px;
+	background-color: rgba(19, 199, 2, 0.7);
+	border-radius: 4px;
+
+	.Toastify__close-button {
+		opacity: 1;
+		z-index: 1000;
+		color: var(--light);
+	}
+}
+
+.toastify-custom-info {
+	color: var(--light);
+	text-align: center;
+	padding: 6px;
+	line-height: 24px;
+	background-color: rgba(0, 117, 226, 0.7);
+	border-radius: 4px;
+
+	.Toastify__close-button {
+		opacity: 1;
+		z-index: 1000;
+		color: var(--light);
+	}
+}
+
+.toastify-custom-error {
+	color: var(--light);
+	text-align: center;
+	padding: 6px;
+	line-height: 24px;
+	background-color: rgba(255, 0, 0, 0.7);
+	border-radius: 4px;
+
+	.Toastify__close-button {
+		opacity: 1;
+		z-index: 1000;
+		color: var(--light);
+	}
+}
+
+.toastify-custom-warn {
+	color: var(--light);
+	text-align: center;
+	padding: 6px;
+	line-height: 24px;
+	background-color: rgba(255, 191, 0, 0.7);
+	border-radius: 4px;
+
+	.Toastify__close-button {
+		opacity: 1;
+		z-index: 1000;
+		color: var(--light);
+	}
+}
+
+.slick-dots {
+	bottom: 16px;
+
+	li {
+		width: 16px;
+		height: 16px;
+		margin: 0;
+	}
+}

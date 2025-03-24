@@ -1,0 +1,17 @@
+.container {
+	width: fit-content;
+	padding: 4px 12px;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 4px;
+
+	&.HOP_TAC {
+		color: #2cae39;
+		background: rgba(44, 174, 57, 0.2);
+	}
+
+	&.DUNG_HOP_TAC {
+		color: #d95656;
+		background: rgba(217, 86, 86, 0.2);
+	}
+}

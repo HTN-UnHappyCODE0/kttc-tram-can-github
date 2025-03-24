@@ -1,0 +1,125 @@
+.container {
+	position: relative;
+	width: 820px;
+	max-height: 90vh;
+	border-radius: 2px;
+	padding: 32px;
+	background-color: var(--bg-light);
+	box-shadow: 0px 137px 123px 0px rgba(175, 175, 175, 0.11), 0px 59.642px 64.694px 0px rgba(175, 175, 175, 0.08),
+		0px 29.66px 43.62px 0px rgba(175, 175, 175, 0.07), 0px 13.866px 30.709px 0px rgba(175, 175, 175, 0.07),
+		0px 5.309px 20.507px 0px rgba(175, 175, 175, 0.06), 0px 1.17px 10.708px 0px rgba(175, 175, 175, 0.05);
+}
+
+.title {
+	color: #23262f;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.icon_close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 6px;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.control {
+	margin-top: 20px;
+	display: flex;
+	gap: 12px;
+	justify-content: flex-end;
+}
+
+.input_price {
+	width: 200px !important;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+
+	.input {
+		cursor: pointer;
+		width: 18px;
+		height: 18px;
+	}
+
+	.label_check_box {
+		cursor: pointer;
+		user-select: none;
+		display: block;
+		color: #2f3643;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+
+.main_form {
+	max-height: 82vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.main {
+	flex: 1;
+	overflow: auto;
+}
+
+.detail {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.action {
+	position: relative;
+	cursor: pointer;
+	width: fit-content;
+	height: fit-content;
+	transition: 0.3s;
+
+	&:hover {
+		.icon_warn {
+			opacity: 0.6;
+		}
+		z-index: 100;
+		.note {
+			display: block;
+		}
+	}
+
+	.note {
+		position: absolute;
+		bottom: calc(100% + 4px);
+		right: 0;
+		width: max-content;
+		z-index: 10;
+		display: none;
+		background-color: #fff;
+		border-radius: 4px;
+		background: var(--bg-light);
+		border: 1px solid var(--border-color);
+		padding: 4px 8px;
+
+		& > p {
+			color: var(--neutrals-4);
+			font-size: 14px;
+			font-weight: 500;
+
+			span {
+				margin-left: 6px;
+				color: var(--neutrals-3);
+				font-weight: 600;
+			}
+		}
+	}
+}

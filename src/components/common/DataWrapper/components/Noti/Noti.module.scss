@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	h3 {
+		font-size: 24px;
+		color: #303b48;
+	}
+
+	p {
+		font-size: 14px;
+		color: #515c69;
+	}
+}
+
+.img {
+	width: 140px;
+	margin-bottom: 16px;
+}
+
+.icon {
+	padding-top: 100%;
+}
+
+.btn {
+	margin-top: 16px;
+}

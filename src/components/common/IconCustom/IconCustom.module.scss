@@ -1,0 +1,38 @@
+.container {
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	padding: 4px;
+	transition: 0.3s;
+	i {
+		width: 24px;
+		height: 24px;
+	}
+	&:active {
+		transform: scale(0.9);
+	}
+	&.create {
+		&:hover {
+			color: #35c244 !important;
+		}
+	}
+	&.edit {
+		&:hover {
+			color: var(--primary) !important;
+		}
+	}
+	&.delete {
+		&:hover {
+			color: var(--danger) !important;
+		}
+	}
+	&.warn {
+		&:hover {
+			color: var(--warn) !important;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 36px;
+}
+
+.image {
+  width: 180px;
+  height: 128px;
+}
+
+.title {
+  margin-top: 32px;
+  color: var(--dark-2);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.text {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--neutrals-3);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.btn {
+  margin-top: 32px;
+}

@@ -1,0 +1,73 @@
+.main_upload {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.list_image {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.box_image {
+	position: relative;
+	width: 72px;
+	height: 72px;
+	border-radius: 6px;
+	border: 1px solid rgba(153, 162, 179, 0.3);
+	overflow: hidden;
+	user-select: none;
+
+	.delete {
+		cursor: pointer;
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		width: 18px;
+		height: 18px;
+		border-radius: 2px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.3s;
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+}
+
+.upload {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.input_upload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 72px;
+	height: 72px;
+	border-radius: 6px;
+	border: 1px solid rgba(153, 162, 179, 0.3);
+	cursor: pointer;
+}
+
+.note_upload {
+	& > p:nth-child(1) {
+		color: #2f3643;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	& > p:nth-child(2) {
+		color: #99a2b3;
+		font-size: 12px;
+		font-weight: 500;
+	}
+}

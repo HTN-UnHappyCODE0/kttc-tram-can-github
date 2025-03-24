@@ -1,0 +1,156 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.main_search {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.search {
+	min-width: 320px;
+}
+
+.filter {
+	min-width: 100px;
+}
+
+.table {
+	margin-top: 16px;
+}
+
+.redText {
+	color: red;
+}
+
+.blueText {
+	color: blue;
+}
+
+.parameter {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	color: #777e90;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	span {
+		color: #171832;
+	}
+}
+
+.linkdetail {
+	color: #2d74ff;
+	cursor: pointer;
+}
+
+.linkdetail:hover {
+	text-decoration: underline;
+}
+
+.mainOption {
+	padding: 8px 12px;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 137px 123px 0px rgba(175, 175, 175, 0.11), 0px 59.642px 64.694px 0px rgba(175, 175, 175, 0.08),
+		0px 29.66px 43.62px 0px rgba(175, 175, 175, 0.07), 0px 13.866px 30.709px 0px rgba(175, 175, 175, 0.07),
+		0px 5.309px 20.507px 0px rgba(175, 175, 175, 0.06), 0px 1.17px 10.708px 0px rgba(175, 175, 175, 0.05);
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px;
+	background-color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.2s;
+
+	& + & {
+		margin-top: 4px;
+	}
+
+	& > p {
+		color: #141416;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.icon {
+		color: rgba(111, 118, 126, 1);
+	}
+
+	&:hover {
+		background-color: #2d74ff;
+
+		& > p {
+			color: #fff;
+		}
+
+		.icon {
+			color: #fff;
+		}
+	}
+}
+.main_action {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	.dots {
+		cursor: pointer;
+		transform: 0.3s;
+		opacity: 0.7;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+}
+
+.dots {
+	cursor: pointer;
+
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.name {
+	width: fit-content;
+	min-width: 300px;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+	transition: 0.3s;
+	cursor: pointer;
+	white-space: wrap;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}

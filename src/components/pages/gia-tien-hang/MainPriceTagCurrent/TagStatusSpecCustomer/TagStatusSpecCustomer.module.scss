@@ -1,0 +1,17 @@
+.container {
+	width: fit-content;
+	padding: 4px 12px;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 4px;
+
+	&.DANG_CUNG_CAP {
+		color: #2cae39;
+		background: rgba(44, 174, 57, 0.2);
+	}
+
+	&.CHUA_CUNG_CAP {
+		color: #d95656;
+		background: rgba(217, 86, 86, 0.2);
+	}
+}

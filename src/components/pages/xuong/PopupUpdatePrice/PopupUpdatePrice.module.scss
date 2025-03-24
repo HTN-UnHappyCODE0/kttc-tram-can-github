@@ -1,0 +1,65 @@
+.container {
+	position: relative;
+	width: 520px;
+	border-radius: 2px;
+	padding: 32px;
+	background-color: var(--bg-light);
+	box-shadow: 0px 137px 123px 0px rgba(175, 175, 175, 0.11), 0px 59.642px 64.694px 0px rgba(175, 175, 175, 0.08),
+		0px 29.66px 43.62px 0px rgba(175, 175, 175, 0.07), 0px 13.866px 30.709px 0px rgba(175, 175, 175, 0.07),
+		0px 5.309px 20.507px 0px rgba(175, 175, 175, 0.06), 0px 1.17px 10.708px 0px rgba(175, 175, 175, 0.05);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.title {
+	color: #23262f;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.control {
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.icon_close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 6px;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.input_price {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+
+	.input {
+		cursor: pointer;
+		width: 18px;
+		height: 18px;
+	}
+
+	.label_check_box {
+		cursor: pointer;
+		user-select: none;
+		display: block;
+		color: #2f3643;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}

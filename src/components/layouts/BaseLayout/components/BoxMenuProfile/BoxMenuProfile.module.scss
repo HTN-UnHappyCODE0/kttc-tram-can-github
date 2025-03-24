@@ -1,0 +1,48 @@
+.container {
+	padding: 8px;
+	width: 200px;
+	border-radius: 6px;
+	background: var(--bg-light);
+	box-shadow: 0px 137px 123px 0px rgba(175, 175, 175, 0.11), 0px 59.642px 64.694px 0px rgba(175, 175, 175, 0.08),
+		0px 29.66px 43.62px 0px rgba(175, 175, 175, 0.07), 0px 13.866px 30.709px 0px rgba(175, 175, 175, 0.07),
+		0px 5.309px 20.507px 0px rgba(175, 175, 175, 0.06), 0px 1.17px 10.708px 0px rgba(175, 175, 175, 0.05);
+}
+
+.item {
+	cursor: pointer;
+	user-select: none;
+	width: 100%;
+	border-radius: 6px;
+	padding: 8px 12px;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	gap: 8px;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: var(--bg-grey);
+	}
+
+	&.active {
+		background-color: var(--bg-grey);
+	}
+
+	& + & {
+		margin-top: 4px;
+	}
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	color: var(--grey-2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}

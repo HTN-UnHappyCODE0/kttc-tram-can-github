@@ -1,0 +1,154 @@
+@import '../../../../styles/variables';
+
+.container {
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0px 4.235px 21.176px 0px rgba(175, 190, 211, 0.11);
+	padding: 16px 20px;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 16px;
+
+	& > h3 {
+		color: #29303c;
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.circle {
+	width: 110px;
+	height: 110px;
+	background: #2cae39;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.arrow {
+	position: relative;
+	flex: 1;
+	width: 100%;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&.level_1 {
+		background-color: #2cae39;
+
+		.arrow_right {
+			border-left: 28px solid #2cae39;
+		}
+	}
+	&.level_2 {
+		background-color: #fb923c;
+
+		.arrow_right {
+			border-left: 28px solid #fb923c;
+		}
+	}
+	&.level_3 {
+		background-color: #f95b5b;
+
+		.arrow_right {
+			border-left: 28px solid #f95b5b;
+		}
+	}
+
+	.arrow_right {
+		width: 0;
+		height: 0;
+		background-color: #fff;
+		border-top: 28px solid transparent;
+		border-bottom: 28px solid transparent;
+		position: absolute;
+		top: 50%;
+		left: calc(100% - 13px);
+		transform: translate(-50%, -50%);
+	}
+
+	.text {
+		font-size: 18px;
+		font-weight: 700;
+		color: #fff;
+	}
+}
+
+@media (max-width: $widthTablet) {
+	.container {
+		margin-top: 0;
+	}
+
+	.main {
+		flex-direction: column;
+	}
+
+	.head {
+		margin-bottom: 13px;
+
+		& > h3 {
+			font-size: 14px;
+		}
+	}
+
+	.arrow {
+		flex: unset;
+		height: 180px;
+		width: 24px;
+
+		.arrow_right {
+			top: calc(100% - 13px);
+			left: 10px;
+			border-right: 28px solid transparent;
+			border-bottom: 0 solid transparent;
+			border-left: 28px solid transparent;
+		}
+
+		&.level_1 {
+			background-color: #2cae39;
+
+			.arrow_right {
+				border-top: 28px solid #2cae39;
+				border-left: 28px solid transparent;
+			}
+		}
+		&.level_2 {
+			background-color: #fb923c;
+
+			.arrow_right {
+				border-top: 28px solid #fb923c;
+				border-left: 28px solid transparent;
+			}
+		}
+		&.level_3 {
+			background-color: #f95b5b;
+
+			.arrow_right {
+				border-top: 28px solid #f95b5b;
+				border-left: 28px solid transparent;
+			}
+		}
+	}
+
+	.text {
+		transform: rotate(90deg);
+	}
+}

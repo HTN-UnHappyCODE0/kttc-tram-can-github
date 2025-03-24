@@ -1,0 +1,24 @@
+.mt {
+	margin-top: 16px;
+}
+
+.mb {
+	margin-bottom: 16px;
+}
+
+.col_2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+.col_4 {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 16px;
+}
+
+.col_3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+}

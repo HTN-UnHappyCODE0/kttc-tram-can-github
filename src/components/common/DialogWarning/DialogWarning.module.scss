@@ -1,0 +1,89 @@
+.popup {
+	background-color: var(--light);
+	width: 460px;
+
+	padding: 20px 24px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
+	justify-content: flex-start;
+
+	.titlePopup {
+		font-size: 24px;
+		font-weight: 600;
+		text-align: left;
+	}
+
+	.note {
+		color: #515c69;
+		font-weight: normal;
+		line-height: inherit;
+		margin-top: 10px;
+		font-size: 14px;
+		text-align: left;
+	}
+
+	.closeIcon {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+	}
+
+	.groupBtnPopup {
+		margin-top: 25px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 16px;
+	}
+
+	&.warn {
+		.titlePopup,
+		.iconWarn {
+			color: var(--warn);
+		}
+	}
+
+	&.green {
+		.titlePopup,
+		.iconWarn {
+			color: var(--green);
+		}
+	}
+
+	&.danger {
+		.titlePopup,
+		.iconWarn {
+			color: var(--danger);
+		}
+	}
+}
+
+.iconWarn {
+	font-size: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--primary);
+}
+
+@media (max-width: 764px) {
+	.popup {
+		padding: 12px 24px;
+
+		.titlePopup {
+			font-size: 18px;
+		}
+
+		.note {
+			margin-top: 6px;
+			font-size: 13px;
+		}
+
+		.groupBtnPopup {
+			margin-top: 24px;
+			gap: 12px;
+		}
+	}
+}

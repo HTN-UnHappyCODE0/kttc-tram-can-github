@@ -1,0 +1,119 @@
+.back {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.header_title {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	p {
+		color: var(--dark-2);
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+.list_btn {
+	display: flex;
+	gap: 8px;
+}
+
+.btn_LuPencil {
+	cursor: pointer;
+	user-select: none;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 12px;
+	border-radius: 2px;
+	border: 1px solid var(--border-color);
+	transition: 0.2s;
+
+	p {
+		color: var(--dark-2);
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 16px 0;
+}
+
+.main_search {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.search {
+	min-width: 296px;
+}
+
+.filter {
+	min-width: 220px;
+}
+
+.table {
+	margin-top: 24px;
+}
+
+.link {
+	font-weight: 600;
+	color: var(--primary);
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.linkdetail {
+	color: #2d74ff;
+	cursor: pointer;
+}
+.icon_add {
+	cursor: pointer;
+	color: var(--blue);
+	text-decoration: underline;
+}
+
+.checkbox_right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: fit-content;
+	color: #2f3643;
+	font-size: 16px;
+	font-weight: 500;
+
+	input {
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+		margin-right: 12px;
+	}
+
+	label {
+		display: block;
+		cursor: pointer;
+		user-select: none;
+	}
+}
+
+.unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	line-height: 1.5;
+}

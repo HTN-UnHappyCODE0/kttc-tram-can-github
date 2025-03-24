@@ -1,0 +1,74 @@
+@import '../../../../styles/variables';
+
+.title {
+	color: var(--dark-2);
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	margin-top: 24px;
+}
+
+@media (max-width: $widthTablet) {
+	.col_2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 12px;
+	}
+}
+
+.unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.name {
+	width: fit-content;
+	min-width: 300px;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+	transition: 0.3s;
+	cursor: pointer;
+	white-space: wrap;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.link {
+	font-weight: 600;
+	color: var(--primary);
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.8;
+		text-decoration: underline;
+	}
+
+	width: fit-content;
+	max-width: 340px;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+	font-weight: 600;
+	transition: 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.totalText {
+	font-size: 15px;
+	font-weight: 700;
+	font-style: italic;
+}

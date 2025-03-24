@@ -1,0 +1,56 @@
+.main_export {
+	position: relative;
+	width: 310px;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	padding: 16px 12px;
+	align-items: center;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0px 137px 123px 0px rgba(175, 175, 175, 0.11), 0px 59.642px 64.694px 0px rgba(175, 175, 175, 0.08),
+		0px 29.66px 43.62px 0px rgba(175, 175, 175, 0.07), 0px 13.866px 30.709px 0px rgba(175, 175, 175, 0.07),
+		0px 5.309px 20.507px 0px rgba(175, 175, 175, 0.06), 0px 1.17px 10.708px 0px rgba(175, 175, 175, 0.05);
+}
+
+.title_export {
+	color: #23262f;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.des_export {
+	color: #777e90;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 2px;
+}
+
+.control_export {
+	margin-top: 20px;
+	display: flex;
+	gap: 12px;
+	justify-content: flex-end;
+}
+
+.icon_close_export {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 6px;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.iconWarn {
+	font-size: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--primary);
+}
