@@ -1,4 +1,4 @@
-import React, {useRef, useState, useMemo, useCallback} from 'react';
+import React, {useRef, useState, useMemo, useCallback, useEffect} from 'react';
 import TippyHeadless from '@tippyjs/react/headless';
 import clsx from 'clsx';
 import {BiCheck} from 'react-icons/bi';
@@ -42,6 +42,11 @@ function SelectFilterMany({selectedIds, setSelectedIds, listData, name, isShowAl
 		setTempSelectedIds(selectedIds);
 		setOpenDropdown(false);
 	};
+	useEffect(() => {
+		if (openDropdown) {
+			setTempSelectedIds(selectedIds);
+		}
+	}, [openDropdown]);
 
 	return (
 		<TippyHeadless
